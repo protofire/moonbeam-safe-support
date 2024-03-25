@@ -1,7 +1,7 @@
-#Github action to add/remove labels to issues
+#GitHub action to add/remove labels to issues
 
 safe_loading:
-    - '(Safe loading issue)'
+    - '(Safe Account loading issue)'
 token_balance:
     - '(Token balance not up-to-date)'
 token_missing:
@@ -12,13 +12,9 @@ tx_missing:
     - '(Transaction missing / not visible in app or service)'
 other:
     - '(Other)'
-mainnet:
-    -  '(Ethereum Mainnet)'   
-gnosis_chain:
-    - '(Gnosis Chain)' 
-polygon:
-    - '(Polygon)'
-bsc: 
-    - '(Binance Smart Chain)'   
-goerli:
-    - '(Goerli)'
+moonbeam:
+    -  '(Moonbeam)'
+moonriver:
+    - '(Moonriver)'
+moonbase:
+    - '(Moonbase)'

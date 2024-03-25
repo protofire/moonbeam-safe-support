@@ -12,7 +12,7 @@ body:
       label: Issue Category
       multiple: false
       options:
-        - Safe loading issue, doesnt load on any interface
+        - Safe Account loading issue, doesn't load on any interface
         - Token missing completely / not visible in the interface or service
         - Token balance not up-to-date, in the interface or service
         - Transaction execution issue
@@ -31,7 +31,7 @@ body:
     id: timedate
     attributes:
       label:  Date and time this happened or you first noticed this issue
-      description: dd-mm-yyyy hh:mm (GMT+2)
+      description: dd-mm-yyyy hh:mm (GMT+0)
     validations:
       required: true
   - type: dropdown
@@ -39,26 +39,18 @@ body:
     attributes:
       label: Network
       multiple: true
-      description: What netowrk(s) is this happening on
+      description: What network(s) is this happening on
       options:
-        - Ethereum Mainnet
-        - Gnosis Chain
-        - Polygon
-        - Binance Smart Chain
-        - Energy Web Chain Mainent
-        - Arbitrum
-        - Aurora
-        - Avalanche
-        - Optimism
-        - Goerli
-        - Volta
+        - Moonbeam
+        - Moonriver
+        - Moonbase
     validations:
       required: true
   - type: input
     id: safe
     attributes:
-      label: Safe Address
-      description: What is the Address of your Safe?
+      label: Safe Account Address
+      description: What is the Address of your Safe Account?
       placeholder: ex. 0xbadda...
   - type: input  
     id: token
@@ -72,6 +64,7 @@ body:
       label: Token Type
       multiple: false
       options:
+        - NATIVE
         - ERC20
         - ERC721
   - type: textarea
